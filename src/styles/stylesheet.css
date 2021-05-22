@@ -23,11 +23,23 @@ h1 {
   h1 {
     font-size: 13rem;
   }
+  .form {
+    width: 360px;
+  }
+  .figure {
+    flex-basis: calc(33.3% - 4rem);
+  }
 }
 
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 8rem;
+  }
+  .form {
+    width: 200px;
+  }
+  .figure {
+    flex-basis: calc(60%);
   }
 }
 
@@ -57,7 +69,6 @@ body {
   margin: 0 auto;
 }
 .figure {
-  flex-basis: calc(33.3% - 4rem);
   /* border: 1px solid #d3d3d3; */
   border: 1px solid #065784;
   padding: 2rem;
@@ -178,7 +189,6 @@ button:focus,
   color: black;
 }
 .form {
-  width: 360px;
   padding: 0 0 0;
   margin: auto;
 }

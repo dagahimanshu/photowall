@@ -12,9 +12,8 @@ function PhotoWall(props) {
     <>
       <Link to="/add">
         <i
-          className="fa fa-plus-circle fa-5x addIcon"
+          className="fa fa-plus-square fa-5x addIcon"
           aria-hidden="true"
-          onClick={() => console.log("Hello")}
           style={{ cursor: "pointer" }}
         />
       </Link>

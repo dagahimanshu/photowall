@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Title from "./Title";
 import PhotoWall from "./PhotoWall";
 import AddPhoto from "./AddPhoto";
-import getPost from "../Services/Posts";
+import { getPost } from "../Services/Posts";
 import { Switch, Route } from "react-router-dom";
 
 class Main extends Component {
@@ -22,6 +22,10 @@ class Main extends Component {
     );
   };
 
+  addPost = (post) => {
+    console.log("Post Added", post);
+  };
+
   componentDidMount() {
     this.setState({
       posts: getPost(),
@@ -33,7 +37,7 @@ class Main extends Component {
       <>
         <Switch>
           <Route path="/add">
-            <AddPhoto />
+            <AddPhoto addPost={this.addPost} />
           </Route>
 
           <Route path="/">
