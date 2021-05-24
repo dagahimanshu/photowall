@@ -22,9 +22,21 @@ class Main extends Component {
     );
   };
 
-  addPost = (post) => {
-    console.log("Post Added", post);
-  };
+  addPost(post) {
+    const posts = this.state.posts;
+    const newPost = {
+      id: Number(new Date()),
+      imageLink: post.imageLink,
+      description: post.description,
+    };
+    posts.push(newPost);
+    this.setState(
+      (state) =>
+        (state = {
+          posts: posts,
+        })
+    );
+  }
 
   componentDidMount() {
     this.setState({
@@ -36,11 +48,20 @@ class Main extends Component {
     return (
       <>
         <Switch>
-          <Route path="/add">
-            <AddPhoto addPost={this.addPost} />
-          </Route>
+          <Route
+            exact
+            path="/add"
+            render={({ history }) => (
+              <AddPhoto
+                addPost={(post) => {
+                  this.addPost(post);
+                  history.push("/");
+                }}
+              />
+            )}
+          />
 
-          <Route path="/">
+          <Route exact path="/">
             <Title title={"PhotoWall"} />
             <PhotoWall
               posts={this.state.posts}

@@ -36,6 +36,7 @@ function addPost(newPost) {
   };
 
   posts.push(post);
+  return posts;
 }
 
 export { getPost, addPost };

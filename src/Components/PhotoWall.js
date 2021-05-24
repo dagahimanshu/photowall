@@ -7,7 +7,7 @@ import "font-awesome/css/font-awesome.min.css";
 
 function PhotoWall(props) {
   const posts = props.posts;
-  if (posts.length === 0) return <p>No new posts available</p>;
+
   return (
     <>
       <Link to="/add">
@@ -19,13 +19,17 @@ function PhotoWall(props) {
       </Link>
 
       <div className="photoGrid">
-        {posts.map((post) => (
-          <Photo
-            post={post}
-            key={post.id}
-            onDelete={() => props.handleDelete(post)}
-          />
-        ))}
+        {posts
+          .sort((x, y) => {
+            return y.id - x.id;
+          })
+          .map((post) => (
+            <Photo
+              post={post}
+              key={post.id}
+              onDelete={() => props.handleDelete(post)}
+            />
+          ))}
       </div>
     </>
   );

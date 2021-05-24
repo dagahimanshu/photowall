@@ -6,15 +6,15 @@ class AddPhoto extends Component {
     description: "",
   };
 
-  post(e) {
-    e.preventDefault();
+  handleSubmit(event) {
+    event.preventDefault();
     this.props.addPost(this.state);
   }
   render() {
     return (
       <>
         <h1>PhotoWall</h1>
-        <form className="form">
+        <form className="form" onSubmit={(event) => this.handleSubmit(event)}>
           <input
             type="text"
             placeholder="Post url"
@@ -35,13 +35,7 @@ class AddPhoto extends Component {
               });
             }}
           />
-          <button
-            onClick={(e) => {
-              this.post(e);
-            }}
-          >
-            Post
-          </button>
+          <button>Post</button>
         </form>
       </>
     );
