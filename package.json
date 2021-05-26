@@ -2,13 +2,14 @@
   "name": "photowall",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dagahimanshu.github.io/photowall",
+  "homepage": "http://dagahimanshu.github.io/photowall/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "dns-packet": "^5.2.2",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^3.2.0",
     "postcss": "^8.2.10",
     "prop-types": "^15.5.7",
     "react": "^17.0.2",
@@ -20,6 +21,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

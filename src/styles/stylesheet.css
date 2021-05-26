@@ -51,7 +51,7 @@ h1 {
 
 @font-face {
   font-family: "billabong", sans-serif;
-  src: url("http://fonts.cdnfonts.com/css/billabong") format("svg");
+  src: url("https://fonts.cdnfonts.com/css/billabong") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -141,10 +141,6 @@ body {
   resize: vertical;
 }
 .addIcon {
-  /* background: url("https://image.flaticon.com/icons/svg/60/60740.svg") center
-    no-repeat;
-  background-size: contain; */
-
   display: table;
   margin: 20px auto;
   border: none;
