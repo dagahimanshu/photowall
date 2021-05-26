@@ -67,6 +67,7 @@ class Main extends Component {
               posts={this.state.posts}
               handleDelete={this.handleDelete}
             />
+            <hr />
           </Route>
         </Switch>
       </>

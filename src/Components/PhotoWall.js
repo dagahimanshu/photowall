@@ -19,6 +19,7 @@ function PhotoWall(props) {
       </Link>
 
       <div className="photoGrid">
+        {posts.length === 0 && <p className="message">No post yet added!!</p>}
         {posts
           .sort((x, y) => {
             return y.id - x.id;
