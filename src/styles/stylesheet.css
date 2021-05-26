@@ -1,4 +1,4 @@
-@import url("http://fonts.cdnfonts.com/css/billabong");
+/* @import url("http://fonts.cdnfonts.com/css/billabong"); */
 html {
   font-size: 10px;
   font-family: sans-serif;
@@ -49,12 +49,12 @@ h1 {
   }
 }
 
-@font-face {
+/* @font-face {
   font-family: "billabong", sans-serif;
-  /* src: url("https://fonts.cdnfonts.com/css/billabong") format("svg"); */
+  src: url("https://fonts.cdnfonts.com/css/billabong") format("svg");
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 h1 a {
   color: black;
