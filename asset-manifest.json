@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/photowall/static/css/main.0454de05.chunk.css",
+    "main.js": "/photowall/static/js/main.2050adf6.chunk.js",
+    "main.js.map": "/photowall/static/js/main.2050adf6.chunk.js.map",
+    "runtime-main.js": "/photowall/static/js/runtime-main.dadc8bd6.js",
+    "runtime-main.js.map": "/photowall/static/js/runtime-main.dadc8bd6.js.map",
+    "static/css/2.2cb80713.chunk.css": "/photowall/static/css/2.2cb80713.chunk.css",
+    "static/js/2.297b9fd8.chunk.js": "/photowall/static/js/2.297b9fd8.chunk.js",
+    "static/js/2.297b9fd8.chunk.js.map": "/photowall/static/js/2.297b9fd8.chunk.js.map",
+    "index.html": "/photowall/index.html",
+    "static/css/2.2cb80713.chunk.css.map": "/photowall/static/css/2.2cb80713.chunk.css.map",
+    "static/css/main.0454de05.chunk.css.map": "/photowall/static/css/main.0454de05.chunk.css.map",
+    "static/js/2.297b9fd8.chunk.js.LICENSE.txt": "/photowall/static/js/2.297b9fd8.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/photowall/static/media/fontawesome-webfont.f691f37e.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dadc8bd6.js",
+    "static/css/2.2cb80713.chunk.css",
+    "static/js/2.297b9fd8.chunk.js",
+    "static/css/main.0454de05.chunk.css",
+    "static/js/main.2050adf6.chunk.js"
+  ]
+}
