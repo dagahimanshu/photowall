@@ -51,7 +51,7 @@ h1 {
 
 @font-face {
   font-family: "billabong", sans-serif;
-  src: url("https://fonts.cdnfonts.com/css/billabong") format("svg");
+  /* src: url("https://fonts.cdnfonts.com/css/billabong") format("svg"); */
   font-weight: normal;
   font-style: normal;
 }
